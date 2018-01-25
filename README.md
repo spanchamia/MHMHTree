@@ -18,7 +18,7 @@ These nodes don’t contain any user keys.
 They are around just to maintain the balance of the tree.
 These are denoted by a circle with an ‘X’ mark in it.
 
-![alt text](screenshots/SingleBalanceNode.png "Single Balance Node")
+![alt text](screenshots/SingleBlncNode.png "Single Balance Node")
 
 ## Working
 The tree self-balances itself whenever there is an insert or delete, as follows:
