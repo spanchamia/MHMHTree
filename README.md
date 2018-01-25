@@ -7,13 +7,15 @@ The MHMHTree(MaxHeap-MinHeap Tree) is an implementation of a balanced binary sea
 ## Nodes
 There are two types of nodes in the tree.
 
-### Data Nodes - 
+### Data Nodes
 These contain actual user keys. 
 These are denoted by a circle with a numeric value in it in the diagrams below.
 
-### Balance Nodes - 
+![alt text](screenshots/SingleDataNode.png "Single Data Node")
+
+### Balance Nodes
 These nodes don’t contain any user keys.
 They are around just to maintain the balance of the tree.
 These are denoted by a circle with an ‘X’ mark in it.
 
-<WIP>
+![alt text](screenshots/SingleBalanceNode.png "Single Balance Node")
