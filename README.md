@@ -11,7 +11,7 @@ There are two types of nodes in the tree.
 These contain actual user keys. 
 These are denoted by a circle with a numeric value in it in the diagrams below.
 
-![](screenshots/SingleDataNode.png =100x100)
+![alt text](screenshots/SingleDataNode.png =100x)
 
 ### Balance Nodes
 These nodes don’t contain any user keys.
