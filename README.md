@@ -26,16 +26,16 @@ The tree self-balances itself whenever there is an insert or delete, as follows:
 ### Inserts
 Here are the possible scenarios
 
-* Empty Tree
+#### Empty Tree
 Create a new data node with user data, left sub-tree is null, right sub-tree is null.
 ![alt text](screenshots/SingleDataNode.png "Single Data Node")
 
-* Odd number of data nodes
+#### Odd number of data nodes
 When there are odd number of data nodes in tree, the root node will be a data node, and each of the two sub-trees will have equal number data nodes. Like in the case of 1 data node, the root node is a data node.
-If there is an insert in this kind of tree, the inserted data is compared with the root data and based on comparison result, it gets inserted into one sub-tree, and the data node's data gets inserted into the other sub-tree. The data node now becomes empty(balance node).
+If there is an insert in this kind of tree, the inserted data is compared with the medial(root) data and based on comparison result, it gets inserted into one sub-tree, and the data node's data gets inserted into the other sub-tree. The root data node now becomes a balance node.
 ![alt text](screenshots/2NodeTree.png "2 Node Tree")
 
-* Even number of data nodes
+#### Even number of data nodes
 When there are even number of data nodes in tree, the root node will be a balance node, and each of the two sub-trees will have equal number of data nodes.
 If there is an insert in this kind of tree, then 
 * inserted data is compared with largest child of left sub-tree(max heap). If it is lesser than this child, then 
