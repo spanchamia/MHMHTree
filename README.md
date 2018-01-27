@@ -50,8 +50,17 @@ If there is an insert in this kind of tree, then
 ![alt text](screenshots/3NodeTree.png "3 Node Tree")
 
 ### Deletes
-Deletes happen exactly as a reverse of inserts
-WIP
+Deletes happen exactly as a reverse of inserts.
+
+#### Odd number of data nodes
+If you delete a node from one sub-tree, you need to insert the root data(it has to be data node since the tree has odd number of data nodes) into that sub-tree to maintain the balance.
+
+#### Even number of data nodes
+If you delete a node from minheap sub-tree, then you need to remove the max node from maxheap sub-tree and put it in root node. And do the opposite if you remove a node from maxheap sub-tree.
 
 ### Lookups
-WIP
+Lookups are the same as a normal binary search tree since all the data nodes in the left sub-tree of current node are smaller than current node, and all the nodes in the right sub-tree of current node are greater than current node.
+
+## Performance
+The number of rebalances happening in the tree per insert/delete is proportional to the number of nodes in the tree. Hence runtime increases linearly(O(n)) with the number of data nodes in tree.
+![alt text](screenshots/InsertPerf.png "Insertion performance Chart")
