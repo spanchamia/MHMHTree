@@ -62,5 +62,15 @@ If you delete a node from minheap sub-tree, then you need to remove the max node
 Lookups are the same as a normal binary search tree since all the data nodes in the left sub-tree of current node are smaller than current node, and all the nodes in the right sub-tree of current node are greater than current node.
 
 ## Performance
+### Run-time
 The number of rebalances happening in the tree per insert/delete is proportional to the number of nodes in the tree. Hence runtime increases linearly(O(n)) with the number of data nodes in tree.
 ![alt text](screenshots/InsertPerf.png "Insertion performance Chart")
+
+## Memory
+The number of balance nodes in the tree are in the range [0, N-1] for N data nodes.
+Each node has references to:
+*  each of its two children,
+* its parent,
+* the actual user data,
+* the max data node of maxheap, and
+* min data node from minheap.
